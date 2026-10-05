@@ -15,7 +15,8 @@ if [[ $path != '/' ]]; then path_without_trailing_slash="$path"; else path_witho
 user_agent="feedme/0.1 (+https://$domain$path_without_trailing_slash/bot)"
 respect_robots="true"
 allow_private="false"
-admin_token="$admin_token"
+#admin_token="$admin_token"
+ynh_app_setting_set --key=admin_token --value=$admin_token
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
