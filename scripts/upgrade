@@ -14,7 +14,8 @@ admin_token="$(ynh_app_setting_get --key=admin_token)"
 user_agent="$(ynh_app_setting_get --key=user_agent)"
 respect_robots="$(ynh_app_setting_get --key=respect_robots)"
 allow_private="1"
-
+# test 
+ynh_app_setting_delete --key=coucou
 #=================================================
 # ENSURE DOWNWARD COMPATIBILITY
 #=================================================
